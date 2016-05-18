@@ -1,10 +1,26 @@
-doctype html5
+
 html.no-js
   head
     script(src='/scripts/vendor.min.js')
     script(src='/scripts/app.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
-    link(href='/styles/styles.css' rel='stylesheet')
     link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet')
+    link(href='/styles/styles.css' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css')
   body
-    h1 John's Dinnerplate
+    .row
+      .container-fluid.edges
+        .col-xs-12
+          h1.center Sketchpad
+    .row
+      .container-fluid
+        .col-xs-1.edges
+        .col-xs-10
+        .col-xs-1.edges
+    .row
+      .container
+        .col-xs-12
+          form(name="side-length", method="post")
+            span.label Length:
+            input(type="integer", name="length")
+            input(type="submit", name="submit")
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
