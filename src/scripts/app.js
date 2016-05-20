@@ -4,7 +4,7 @@ console.log "Alice's Sketchpad"
 var counter = document.getElementById('length').value;
 
 var createDivs = function(){
-  for(i = length; i > 0; i-=){
+  for(counter; counter > 0; counter-=){
     document.createElement('div');
     document.body.appendChild('div');
   }
