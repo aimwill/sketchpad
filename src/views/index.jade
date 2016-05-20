@@ -19,8 +19,8 @@ html.no-js
     .row
       .container
         .col-xs-12
-          form(name="side-length", method="post")
+          form(name="side-length", method="get")
             span.label Length:
-            input(type="integer", name="length")
+            input(type="integer", id="length")
             input(type="submit", name="submit")
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
